@@ -2,6 +2,12 @@
 
 基于 C++ Chromium 内核开发出的指纹浏览器。
 
+## 联系方式：
+- **注意** 可提供相关技术服务咨询，上面指纹相关功能的技术100-500￥/单个，整套2w，对这个项目感兴趣的朋友可以联系我。
+- QQ：1159846487
+- 谷歌邮箱：syujie875@gmail.com
+- 擅长chromium 源码编译，可以指定任意版本。
+
 ## 功能特点：
 
 - **指纹识别防护**：通过多种技术手段防护指纹识别，包括对用户特征的屏蔽和混淆，减少网站对用户身份的识别准确率。
@@ -13,6 +19,8 @@
 - **实际应用场景**：适用于网页数据获取、TikTok/Facebook矩阵养号、海外问卷调研等场景。用户反馈在TikTok、谷歌广告业务方面成功率超过85%。
 - **多平台支持**：支持Windows、macOS多个平台。
 
+## 使用方法：
+- chrome --shi-fp="eyJ0YWciOiLnjonnmoTmjIfnurnmtY/op4jlmagiLCJtZW1vcnkiOjgsImNwdSI6MTYsImdwdSI6eyJnbF92ZW5kb3IiOiJHb29nbGUgSW5jLiAoTlZJRElBKSIsImdsX3JlbmRlcmVyIjoiQU5HTEUgKE5WSURJQSwgTlZJRElBIEdlRm9yY2UgUlRYIDIwNjAgKDB4MDAwMDFGNTEpIERpcmVjdDNEOUV4IHZzXzNfMCBwc18zXzAsIEQzRDlFeCkiLCJ3aWR0aCI6NSwiaGVpZ2h0Ijo2LCJnbF9pbWFnZSI6MTMsImdwdV92ZW5kb3IiOiJpbnRlbCIsImdwdV9hcmNoIjoidHVyaW5nIn0sIm1lZGlhIjp7ImNoYXJnZSI6MSwiYXVkaW9faW5wdXRfZGV2aWNlIjoxLCJhdWRpb19vdXRwdXRfZGV2aWNlIjoxLCJ2aWRlb19pbnB1dF9kZXZpY2UiOjF9LCJjbGllbnRfcmVjdHMiOjEuMDAwMDIyNDU5MDQzODA5NCwic2NyZWVuIjp7ImNoYXJnZSI6MSwiaGVpZ2h0IjoxMDAwLCJ3aWR0aCI6NjAwLCJkZXB0aCI6MTIsInRhc2tfaGVpZ2h0IjoyNX0sImNhbnZhcyI6eyJjYW52YXNfcmFuZCI6MTc3ODgyMzcwMCwiY2FudmFzX2NoYXIiOiJjIn0sImdlb3Bvc2l0aW9uIjp7ImNoYXJnZSI6MSwibGF0aXR1ZGUiOjIyLjM1MjcyNDIsImxvbmdpdHVkZSI6MTE0LjEzOTQsImFjY3VyYWN5IjoxMDAwfSwidGltZXpvbmUiOiJBc2lhL0hvbmdfS29uZyIsInZvaWNlX3R0c19saXN0IjoiMzUsNzgsNzEsNiwxMDksNzUsNDgsMTEsNjAsMzQsMzIsODMsMjgsMTYsMjMsODQsMTA3LDc3LDEwMCwzLDY0LDEwMSw1Niw1NSw1Nyw2OCwxMTgsMjYsNTEsNjUsNjMsOTYsMTksNTgsNDIsMTAzLDEyLDg2LDk3LDExMiw0MCwxMDQsODksNywxMDUsNjksMzksNzIiLCJvc192ZXIiOiJXaW5kb3dzIDEwIiwidGFza19pY29uIjozMywiYmF0dHJleSI6MC42LCJtb2JpbGUiOjV9"
 
 ### 支持的指纹和功能
 
@@ -69,11 +77,7 @@
 
 如果您在使用过程中遇到问题或需要技术支持，欢迎随时联系我。同时对于更深入的技术咨询和定制化开发服务，您可以选择付费咨询。
 
-## 联系方式：
-- **注意** 可提供相关技术服务咨询，上面指纹相关功能的技术100-500￥/单个，整套2w，对这个项目感兴趣的朋友可以联系我。
-- QQ：1159846487
-- 谷歌邮箱：syujie875@gmail.com
-- 擅长chromium 源码编译，可以指定任意版本。
+
 ## 成品展示
 ![alt text](image.png)
 ![alt text](image-1.png)
@@ -81,5 +85,6 @@
 ![alt text](image-3.png)
 ![alt text](image-4.png)
 ![alt text](image-5.png)
+
 
 
