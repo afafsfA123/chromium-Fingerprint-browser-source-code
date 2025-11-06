@@ -1,6 +1,6 @@
 # 指纹浏览器（Fingerprint Browser）
 
-基于 C++ Chromium 内核开发出的指纹浏览器（134版本）。
+基于 C++ Chromium 内核开发出的指纹浏览器（134版本），可以在release中下载体验。
 
 ## 联系方式：
 - **注意** 可提供相关技术服务咨询，上面指纹相关功能的技术100-500￥/单个，整套2w，对这个项目感兴趣的朋友可以联系我。
@@ -143,6 +143,7 @@
 ![alt text](image-3.png)
 ![alt text](image-4.png)
 ![alt text](image-5.png)
+
 
 
 
