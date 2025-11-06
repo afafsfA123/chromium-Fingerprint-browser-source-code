@@ -74,11 +74,10 @@
     os_ver:"Windows 10",
     task_icon:33,
     battrey:0.6,
-
 };
-将结构体转化为base64字符串，通过--shi-fp传递即可，下面是简单示例：
+- 将结构体转化为base64字符串，通过--shi-fp传递即可，下面是简单示例：
 - chrome --shi-fp="eyJ0YWciOiLnjonnmoTmjIfnurnmtY/op4jlmagiLCJtZW1vcnkiOjgsImNwdSI6MTYsImdwdSI6eyJnbF92ZW5kb3IiOiJHb29nbGUgSW5jLiAoTlZJRElBKSIsImdsX3JlbmRlcmVyIjoiQU5HTEUgKE5WSURJQSwgTlZJRElBIEdlRm9yY2UgUlRYIDIwNjAgKDB4MDAwMDFGNTEpIERpcmVjdDNEOUV4IHZzXzNfMCBwc18zXzAsIEQzRDlFeCkiLCJ3aWR0aCI6NSwiaGVpZ2h0Ijo2LCJnbF9pbWFnZSI6MTMsImdwdV92ZW5kb3IiOiJpbnRlbCIsImdwdV9hcmNoIjoidHVyaW5nIn0sIm1lZGlhIjp7ImNoYXJnZSI6MSwiYXVkaW9faW5wdXRfZGV2aWNlIjoxLCJhdWRpb19vdXRwdXRfZGV2aWNlIjoxLCJ2aWRlb19pbnB1dF9kZXZpY2UiOjF9LCJjbGllbnRfcmVjdHMiOjEuMDAwMDIyNDU5MDQzODA5NCwic2NyZWVuIjp7ImNoYXJnZSI6MSwiaGVpZ2h0IjoxMDAwLCJ3aWR0aCI6NjAwLCJkZXB0aCI6MTIsInRhc2tfaGVpZ2h0IjoyNX0sImNhbnZhcyI6eyJjYW52YXNfcmFuZCI6MTc3ODgyMzcwMCwiY2FudmFzX2NoYXIiOiJjIn0sImdlb3Bvc2l0aW9uIjp7ImNoYXJnZSI6MSwibGF0aXR1ZGUiOjIyLjM1MjcyNDIsImxvbmdpdHVkZSI6MTE0LjEzOTQsImFjY3VyYWN5IjoxMDAwfSwidGltZXpvbmUiOiJBc2lhL0hvbmdfS29uZyIsInZvaWNlX3R0c19saXN0IjoiMzUsNzgsNzEsNiwxMDksNzUsNDgsMTEsNjAsMzQsMzIsODMsMjgsMTYsMjMsODQsMTA3LDc3LDEwMCwzLDY0LDEwMSw1Niw1NSw1Nyw2OCwxMTgsMjYsNTEsNjUsNjMsOTYsMTksNTgsNDIsMTAzLDEyLDg2LDk3LDExMiw0MCwxMDQsODksNywxMDUsNjksMzksNzIiLCJvc192ZXIiOiJXaW5kb3dzIDEwIiwidGFza19pY29uIjozMywiYmF0dHJleSI6MC42LCJtb2JpbGUiOjV9"
-如果要修改webrtc暴露的ip的话，传递--webrtc-ip=185.100.169.202即可。
+- 如果要修改webrtc暴露的ip的话，传递--webrtc-ip=185.100.169.202即可。
 ### 支持的指纹和功能
 
 
@@ -142,6 +141,7 @@
 ![alt text](image-3.png)
 ![alt text](image-4.png)
 ![alt text](image-5.png)
+
 
 
 
