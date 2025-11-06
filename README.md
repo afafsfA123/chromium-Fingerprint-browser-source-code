@@ -20,8 +20,65 @@
 - **多平台支持**：支持Windows、macOS多个平台。
 
 ## 使用方法：
-- chrome --shi-fp="eyJ0YWciOiLnjonnmoTmjIfnurnmtY/op4jlmagiLCJtZW1vcnkiOjgsImNwdSI6MTYsImdwdSI6eyJnbF92ZW5kb3IiOiJHb29nbGUgSW5jLiAoTlZJRElBKSIsImdsX3JlbmRlcmVyIjoiQU5HTEUgKE5WSURJQSwgTlZJRElBIEdlRm9yY2UgUlRYIDIwNjAgKDB4MDAwMDFGNTEpIERpcmVjdDNEOUV4IHZzXzNfMCBwc18zXzAsIEQzRDlFeCkiLCJ3aWR0aCI6NSwiaGVpZ2h0Ijo2LCJnbF9pbWFnZSI6MTMsImdwdV92ZW5kb3IiOiJpbnRlbCIsImdwdV9hcmNoIjoidHVyaW5nIn0sIm1lZGlhIjp7ImNoYXJnZSI6MSwiYXVkaW9faW5wdXRfZGV2aWNlIjoxLCJhdWRpb19vdXRwdXRfZGV2aWNlIjoxLCJ2aWRlb19pbnB1dF9kZXZpY2UiOjF9LCJjbGllbnRfcmVjdHMiOjEuMDAwMDIyNDU5MDQzODA5NCwic2NyZWVuIjp7ImNoYXJnZSI6MSwiaGVpZ2h0IjoxMDAwLCJ3aWR0aCI6NjAwLCJkZXB0aCI6MTIsInRhc2tfaGVpZ2h0IjoyNX0sImNhbnZhcyI6eyJjYW52YXNfcmFuZCI6MTc3ODgyMzcwMCwiY2FudmFzX2NoYXIiOiJjIn0sImdlb3Bvc2l0aW9uIjp7ImNoYXJnZSI6MSwibGF0aXR1ZGUiOjIyLjM1MjcyNDIsImxvbmdpdHVkZSI6MTE0LjEzOTQsImFjY3VyYWN5IjoxMDAwfSwidGltZXpvbmUiOiJBc2lhL0hvbmdfS29uZyIsInZvaWNlX3R0c19saXN0IjoiMzUsNzgsNzEsNiwxMDksNzUsNDgsMTEsNjAsMzQsMzIsODMsMjgsMTYsMjMsODQsMTA3LDc3LDEwMCwzLDY0LDEwMSw1Niw1NSw1Nyw2OCwxMTgsMjYsNTEsNjUsNjMsOTYsMTksNTgsNDIsMTAzLDEyLDg2LDk3LDExMiw0MCwxMDQsODksNywxMDUsNjksMzksNzIiLCJvc192ZXIiOiJXaW5kb3dzIDEwIiwidGFza19pY29uIjozMywiYmF0dHJleSI6MC42LCJtb2JpbGUiOjV9"
+- const fpData = {
+    tag: '玉的指纹浏览器',
+    memory: 8,
+    cpu: 16,
+    gpu: {
+        gl_vendor: 'Google Inc. (NVIDIA)',
+        gl_renderer: 'ANGLE (NVIDIA, NVIDIA GeForce RTX 2060 (0x00001F51) Direct3D9Ex vs_3_0 ps_3_0, D3D9Ex)',
+        width:5,//1-9的随机整数
+        height:6,
+        gl_image:13,
+        gpu_vendor: 'intel',
+        gpu_arch: 'turing',
+    },
+    media:{
+        charge:1,//charge为1时表示真实设备
+        //audio_rd:generateRandomFloat(0.0, 0.5),
+        //audio_rd:0,
+        audio_input_device:1,
+        audio_output_device:1,
+        video_input_device:1,
+    },
+    client_rects:generateRandomFloat(1.00001, 1.00003),
+    // client_rects:0,
+    screen:{
+        charge:1,
+        height:1000,
+        width:600,
+        depth:12,
+        task_height:25,
+    },
+    canvas:{
+        // canvas_char:'a',        
+        canvas_rand:generateRandomNumber(),
+        canvas_char:getRandomCharAF(),
+        // canvas_rand:-2,
+    },
+    port: "0", // 端口扫描保护 值: 0-完全禁止扫描 80,8080,22,3389-以逗号分隔的字符串为开放端口(前提必须是本地已经开放了对应端口)
+    geoposition:{
+        charge:1,//charge不为1时，使用默认地理位置  1:允许 0：禁止  2:询问
+        latitude:22.3527242,
+        longitude:114.1394,
+        accuracy:1000,
+    },
+    timezone:"Asia/Hong_Kong",
+    voice_tts_list:generateRandomNumbers(0, 118, 48),
+    // font:{
+    //     charge:0,
+    //     font_list:generateRandomNumbers(0, 3554, 243),
+    //     family_list:generateFontFamily(),
+    //     //abort_family:"Microsoft,MS,Segoe,Webdings,Wingdings,Marlett,Yu,HoloLens",
+    // },
+    os_ver:"Windows 10",
+    task_icon:33,
+    battrey:0.6,
 
+};
+将结构体转化为base64字符串，通过--shi-fp传递即可，下面是简单示例：
+- chrome --shi-fp="eyJ0YWciOiLnjonnmoTmjIfnurnmtY/op4jlmagiLCJtZW1vcnkiOjgsImNwdSI6MTYsImdwdSI6eyJnbF92ZW5kb3IiOiJHb29nbGUgSW5jLiAoTlZJRElBKSIsImdsX3JlbmRlcmVyIjoiQU5HTEUgKE5WSURJQSwgTlZJRElBIEdlRm9yY2UgUlRYIDIwNjAgKDB4MDAwMDFGNTEpIERpcmVjdDNEOUV4IHZzXzNfMCBwc18zXzAsIEQzRDlFeCkiLCJ3aWR0aCI6NSwiaGVpZ2h0Ijo2LCJnbF9pbWFnZSI6MTMsImdwdV92ZW5kb3IiOiJpbnRlbCIsImdwdV9hcmNoIjoidHVyaW5nIn0sIm1lZGlhIjp7ImNoYXJnZSI6MSwiYXVkaW9faW5wdXRfZGV2aWNlIjoxLCJhdWRpb19vdXRwdXRfZGV2aWNlIjoxLCJ2aWRlb19pbnB1dF9kZXZpY2UiOjF9LCJjbGllbnRfcmVjdHMiOjEuMDAwMDIyNDU5MDQzODA5NCwic2NyZWVuIjp7ImNoYXJnZSI6MSwiaGVpZ2h0IjoxMDAwLCJ3aWR0aCI6NjAwLCJkZXB0aCI6MTIsInRhc2tfaGVpZ2h0IjoyNX0sImNhbnZhcyI6eyJjYW52YXNfcmFuZCI6MTc3ODgyMzcwMCwiY2FudmFzX2NoYXIiOiJjIn0sImdlb3Bvc2l0aW9uIjp7ImNoYXJnZSI6MSwibGF0aXR1ZGUiOjIyLjM1MjcyNDIsImxvbmdpdHVkZSI6MTE0LjEzOTQsImFjY3VyYWN5IjoxMDAwfSwidGltZXpvbmUiOiJBc2lhL0hvbmdfS29uZyIsInZvaWNlX3R0c19saXN0IjoiMzUsNzgsNzEsNiwxMDksNzUsNDgsMTEsNjAsMzQsMzIsODMsMjgsMTYsMjMsODQsMTA3LDc3LDEwMCwzLDY0LDEwMSw1Niw1NSw1Nyw2OCwxMTgsMjYsNTEsNjUsNjMsOTYsMTksNTgsNDIsMTAzLDEyLDg2LDk3LDExMiw0MCwxMDQsODksNywxMDUsNjksMzksNzIiLCJvc192ZXIiOiJXaW5kb3dzIDEwIiwidGFza19pY29uIjozMywiYmF0dHJleSI6MC42LCJtb2JpbGUiOjV9"
+如果要修改webrtc暴露的ip的话，传递--webrtc-ip=185.100.169.202即可。
 ### 支持的指纹和功能
 
 
@@ -85,6 +142,7 @@
 ![alt text](image-3.png)
 ![alt text](image-4.png)
 ![alt text](image-5.png)
+
 
 
 
