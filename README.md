@@ -71,7 +71,8 @@
 
 ## 联系方式：
 - **注意** 可提供相关技术服务咨询，上面指纹相关功能的技术100-500￥/单个，整套2w，对这个项目感兴趣的朋友可以联系我。
-- QQ：1159846487 
+- QQ：1159846487
+- 谷歌邮箱：syujie875@gmail.com
 - 擅长chromium 源码编译，可以指定任意版本。
 ## 成品展示
 ![alt text](image.png)
@@ -80,4 +81,5 @@
 ![alt text](image-3.png)
 ![alt text](image-4.png)
 ![alt text](image-5.png)
+
 
